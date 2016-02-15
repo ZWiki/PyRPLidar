@@ -13,6 +13,38 @@ from Queue import Queue
 from rplidar_types import RPLidarFrame
 from rplidar_monitor import RPLidarMonitor
 
+ascii_schematic = r"""
+             1
+         _________
+        /         \
+       /    ___    \
+      /    /   \    \
+  4  |\    \___/    /|  2
+     | \           / | 
+      \ \_________/ /
+       \           /
+        \         /
+         \_______/
+
+             3             
+"""
+##
+#             1
+#         _________
+#        /         \
+#       /    ___    \
+#      /    /   \    \
+#  4  |\    \___/    /|   2
+#     | \           / | 
+#      \ \_________/ /
+#       \           /
+#        \         /
+#         \_______/
+#
+#             3            
+#
+# The above is a rough image of the sides of the lidar.
+##
 class RPLidar(object):
     def __init__(self, port, baudrate=115200, timeout=2, max_size_points=360, max_size_frames=10):
         self.serial_port = None # The actual serial port 
