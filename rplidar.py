@@ -97,8 +97,7 @@ class RPLidar(object):
                 self.is_connected = False
             except serial.SerialException as e:
                 print e.message
-        
-                
+
     def start_motor(self):
         self.serial_port.setDTR(False)
         self.is_motor_running = True

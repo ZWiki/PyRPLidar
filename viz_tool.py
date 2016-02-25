@@ -165,7 +165,7 @@ if __name__ == '__main__':
 #                     y_comp = point.distance * np.cos(point.angle*np.pi/180)
                     _x.append(x_comp)
                     _y.append(y_comp)
-#                 print "Angle: %.2f    Dist: %.2f    Q: %d" % (point.angle, point.distance, point.quality)
+                print "Angle: %.2f    Dist: %.2f    Q: %d" % (point.angle, point.distance, point.quality)
             set_plot((_x, _y))
             plt.axis('equal')
             plt.pause(0.15)
